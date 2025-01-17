@@ -5,10 +5,140 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>University of Porto</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              primary: '#333333',
+              secondary: '#A18A4D',
+              'dark-grey': '#F2F2F2',
+              'light-text': '#D5D5D5',
+            },
+          },
+        },
+      };
+    </script>
+    <style type="text/tailwindcss">
+      .center {
+        @apply flex items-center justify-center;
+      }
+      .container {
+        @apply w-full max-w-6xl mx-auto;
+      }
+    </style>
   </head>
   <body>
     <main>
-      <h1 class="text-3xl text-red-400">No content here</h1>
+      <nav class="w-full bg-primary pt-2 text-white">
+        <div
+          class="flex items-center justify-between w-full max-w-6xl mx-auto mb-3"
+        >
+          <div class="flex items-center gap-3 text-sm font-semibold">
+            <div class="flex items-center gap-1 cursor-pointer">
+              <p>About the University</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </div>
+            <div class="flex items-center gap-1 cursor-pointer">
+              <p>Faculty</p>
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-4"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m19.5 8.25-7.5 7.5-7.5-7.5"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="center gap-2 font-semibold">
+            <p class="text-[#6C757D] cursor-pointer hover:text-white">PT</p>
+            <p class="cursor-pointer">EN</p>
+          </div>
+        </div>
+        <div class="w-full bg-light-text text-primary">
+          <div class="container flex justify-between items-center">
+            <h1 class="text-3xl font-bold">Universidad du porto</h1>
+            <div class="center gap-3 uppercase py-8 text-lg font-bold">
+              <p class="hover:cursor-pointer">Study</p>
+              <p class="hover:cursor-pointer">research</p>
+              <p class="hover:cursor-pointer">live</p>
+              <p class="hover:cursor-pointer">innovate</p>
+              <p class="hover:cursor-pointer">explore</p>
+              <div class="center gap-2 border-b border-black ml-4">
+                <p class="cursor-pointer capitalize">Search</p>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  class="size-4"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <div class="w-full relative h-[75vh] bg-blue-400">
+        <div class="center size-5 p-1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M15.75 19.5 8.25 12l7.5-7.5"
+            />
+          </svg>
+        </div>
+        <div class="center size-5 p-1">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="size-6"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="m8.25 4.5 7.5 7.5-7.5 7.5"
+            />
+          </svg>
+        </div>
+      </div>
     </main>
   </body>
 </html>
