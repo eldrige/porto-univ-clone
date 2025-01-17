@@ -26,15 +26,17 @@
       .container {
         @apply w-full max-w-6xl mx-auto;
       }
+
+      .scale {
+        @apply transition-transform duration-300 ease-in-out transform hover:scale-110;
+      }
     </style>
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <main>
       <nav class="w-full bg-primary pt-2 text-white">
-        <div
-          class="flex items-center justify-between w-full max-w-6xl mx-auto mb-3"
-        >
+        <div class="flex items-center justify-between container mb-3">
           <div class="flex items-center gap-3 text-sm font-semibold">
             <div class="flex items-center gap-1 cursor-pointer">
               <p>About the University</p>
@@ -76,7 +78,7 @@
             <p class="cursor-pointer">EN</p>
           </div>
         </div>
-        <div class="w-full bg-light-text text-primary">
+        <div class="w-full bg-light-text text-primary sticky top-0">
           <div class="container flex justify-between items-center">
             <h1 class="text-3xl font-bold">Universidad du porto</h1>
             <div class="center gap-3 uppercase py-8 text-lg font-bold">
@@ -142,6 +144,200 @@
               d="m8.25 4.5 7.5 7.5-7.5 7.5"
             />
           </svg>
+        </div>
+        <div class="absolute top-1/2 left-32 w-1/3">
+          <div
+            class="bg-primary opacity-75 z-50 px-4 py-7 text-white inline-flex flex-col gap-4"
+          >
+            <h1 class="text-2xl font-bold text-white">Let's grow together</h1>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Neque
+              culpa obcaecati dolorum ipsa officia minus sequi assumenda?
+            </p>
+            <button
+              class="w-1/5 bg-secondary text-primary text-sm capitalize p-1 flex items-center justify-center cursor-pointer"
+            >
+              See more
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="w-full bg-white py-20">
+        <div class="container">
+          <h1 class="text-secondary text-5xl font-bold mb-16">Study</h1>
+          <div class="w-full flex items-start gap-12">
+            <p class="text-primary text-3xl font-semibold text-nowrap">
+              Your future is here!
+            </p>
+            <p class="leading-8 text-[#46494C] text-lg">
+              Gathering the most complete offer of training programmes in
+              Portugal, the 14 faculties of the U.Porto offer unique conditions
+              to those who want to build an academic path of excellence and
+              properly valued by the labour market.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="w-full center">
+        <div class="h-[0.5px] w-4/5 bg-primary">
+          <p class="invisible">12</p>
+        </div>
+      </div>
+      <div class="container py-20">
+        <h1 class="text-primary text-3xl font-semibold">
+          Which course are you looking for?
+        </h1>
+        <div class="center items-start gap-x-8 mt-8">
+          <div class="flex-1 flex flex-col gap-4">
+            <select name="" id="" class="w-full p-4 border border-primary">
+              <option value="">Select a course</option>
+              <option value="Math">Math</option>
+              <option value="eng">English</option>
+              <option value="french">French</option>
+              <option value="chem">Chem</option>
+            </select>
+            <input
+              type="text"
+              class="w-full p-4 border border-primary"
+              placeholder="Please enter course keywords"
+            />
+            <button
+              class="bg-secondary cursor-pointer text-lg font-bold text-white capitalize p-2"
+            >
+              search
+            </button>
+          </div>
+          <div class="flex flex-col gap-4">
+            <h1 class="text-primary text-3xl font-semibold">
+              Courses from A to Z
+            </h1>
+            <p
+              class="cursor-pointer underline text-primary hover:text-secondary text-2xl"
+            >
+              Bachelor's and Integrated Master’s Degrees
+            </p>
+            <p
+              class="cursor-pointer underline text-primary hover:text-secondary text-2xl"
+            >
+              Master's degree
+            </p>
+            <p
+              class="cursor-pointer underline text-primary hover:text-secondary text-2xl"
+            >
+              Doctorates
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="w-full py-20 bg-dark-grey">
+        <div class="container">
+          <div class="flex items-center justify-between">
+            <h1 class="text-secondary text-5xl font-bold mb-16">News</h1>
+            <div
+              class="center gap-2 text-secondary font-semibold hover:cursor-pointer hover:underline"
+            >
+              <p>All news</p>
+              <span
+                class="size-6 bg-secondary rounded-full cursor-pointer p-1 center transition-transform duration-300 ease-in-out transform hover:scale-110"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="#fff"
+                  class="size-4 hover:transform hover:scale-110"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                  />
+                </svg>
+              </span>
+            </div>
+          </div>
+          <div class="w-full flex items-baseline justify-between gap-x-10 mb-3">
+            <div class="w-1/3 bg-white cursor-pointer">
+              <div class="p-4">
+                <p class="text-secondary">Campus e Cultura</p>
+                <h2
+                  class="text-primary text-2xl font-bold mt-3 mb-10 leading-1"
+                >
+                  Jose Manuel Varajeo, the new director of the Faculty of Fine
+                  Arts and Culture
+                </h2>
+                <p>10 January 2025</p>
+              </div>
+              <div class="w-full h-64">
+                <img src="./assets/images/hero.jpg" alt="hero img" />
+              </div>
+            </div>
+            <div class="w-1/3 bg-white cursor-pointer">
+              <div class="p-4">
+                <p class="text-secondary">Campus e Cultura</p>
+                <h2
+                  class="text-primary text-2xl font-bold mt-3 mb-10 leading-1"
+                >
+                  Jose Manuel Varajeo, the new director of the Faculty of Fine
+                  Arts and Culture
+                </h2>
+                <p>10 January 2025</p>
+              </div>
+              <div class="w-full h-64">
+                <img src="./assets/images/hero.jpg" alt="hero img" />
+              </div>
+            </div>
+            <div class="w-1/3 bg-white cursor-pointer">
+              <div class="p-4">
+                <p class="text-secondary">No mundo</p>
+                <h2
+                  class="text-primary text-2xl font-bold mt-3 mb-10 leading-1"
+                >
+                  Adonis Creed Varajeo, the new director of the Faculty of Fine
+                  Arts and Culture
+                </h2>
+                <p>9 January 2025</p>
+              </div>
+              <div class="w-full h-64">
+                <img src="./assets/images/hero.jpg" alt="hero img" />
+              </div>
+            </div>
+          </div>
+          <div class="inline-flex items-baseline gap-4">
+            <span class="bg-light-text p-1 center size-10 cursor-pointer">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="M15.75 19.5 8.25 12l7.5-7.5"
+                />
+              </svg>
+            </span>
+            <span class="bg-secondary p-1 center size-10 cursor-pointer">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke-width="1.5"
+                stroke="currentColor"
+                class="size-5"
+              >
+                <path
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  d="m8.25 4.5 7.5 7.5-7.5 7.5"
+                />
+              </svg>
+            </span>
+          </div>
         </div>
       </div>
     </main>
